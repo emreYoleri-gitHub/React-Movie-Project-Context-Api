@@ -1,8 +1,8 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Context } from "../context/context";
 import Movies from "./Movies";
 const Input = () => {
-  const { getMovies, state } = useContext(Context);
+  const { getMovies } = useContext(Context);
   const [inpValue, setInpValue] = useState(null);
   const [dataCheck, setDataCheck] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -19,9 +19,6 @@ const Input = () => {
     }
   };
 
-  useEffect(() => {
-    console.log(state);
-  }, [state]);
   return (
     <div className="container-fluid">
       <div className="row p-3">
