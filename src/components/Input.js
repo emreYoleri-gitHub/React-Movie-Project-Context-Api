@@ -3,7 +3,7 @@ import { Context } from "../context/context";
 import Movies from "./Movies";
 const Input = () => {
   const { getMovies } = useContext(Context);
-  const [inpValue, setInpValue] = useState(null);
+  const [inpValue, setInpValue] = useState("");
   const [dataCheck, setDataCheck] = useState(false);
   const [loading, setLoading] = useState(false);
 
